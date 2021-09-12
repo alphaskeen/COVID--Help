@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+	integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	crossorigin="anonymous">
+    <style>
+        
+body {
+  background-image: url('images/back.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+</style>
+
+<title>Covid-19 Help Page</title>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  </style>
+  </head>
+</head>
+<body>
+ 	<div class="container my-2">
+ 
+		<h1 >WELCOME TO THE COVID19 HELPLINEDESK CREATED BY TEAM TEERX</h1>
+			<h2>WHO ARE YOU?</h2>
+					<a th:href = "@{/showNewPatientForm}"> <img th:src="@{/images/patient.jpg}"  width="300" height="300" alt="patient" />  </a>
+					<a th:href = "@{/showNewCaregiverForm}"> <img th:src="@{/images/caregiver.jpg}"  width="300" height="300" alt="caregiver" />  </a>
+					
+				
+	</div>
+</body>
+</html>
